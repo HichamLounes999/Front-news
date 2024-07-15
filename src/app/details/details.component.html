@@ -1,0 +1,23 @@
+<div class="container mx-auto p-6 bg-white rounded-lg shadow-md mt-10">
+  <div class="mb-4">
+    <h1 class="text-4xl font-bold text-gray-800">{{newsDetails.title}}</h1>
+    <p class="text-gray-600">By <span class="font-semibold">{{newsDetails.sources}}</span></p>
+  </div>
+
+  <div class="mb-4">
+    <img src="assets/news.jpg" alt="News Image" class="w-96 h-80 object-fill rounded-md">
+  </div>
+
+  <div class="mb-4">
+    <p class="text-gray-700 leading-relaxed">
+      {{newsDetails.description}}.
+    </p>
+    <p class="text-gray-700 leading-relaxed mt-4">
+      {{newsDetails.category}}.
+    </p>
+  </div>
+
+  <div class="mt-6">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" (click)="back()">back</button>
+  </div>
+</div>
